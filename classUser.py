@@ -16,6 +16,5 @@ class User:
         self.compteBanquaire.afficherDebits()
 
     def creaCompte(self, montant):
-
         self.compteBanquaire.solde += montant
         self.compteBanquaire.credit.append(montant)

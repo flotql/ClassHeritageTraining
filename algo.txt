@@ -35,3 +35,10 @@ creaCompte(nom,montant)
 class premium(user)
 
 init : super().init
+
+---------------------
+
+class banque
+
+init : prem , liste inscrits, emprunt tot, pecule
+

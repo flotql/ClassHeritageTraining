@@ -13,6 +13,18 @@ class Premium(User):
     def emprunter(self, montant):
         self.emprunt += montant
         self.compteBanquaire.crediter(montant)
+        print(f"Votre emprunt s'élève à {self.emprunt} BITCOINS")
+
+    def remboursement(self, montant):
+        self.emprunt -= montant
+        self.compteBanquaire.debiter(montant)
+        if self.emprunt == 0:
+            print(f"Votre emprunt est maintenant complètement remboursé, merci !")
+        else:
+            print(f"Votre emprunt s'élève à {self.emprunt} BITCOINS")
+
+    def sommeEmprunt(self):
+        print(f"Votre emprunt s'élève à {self.emprunt} BITCOINS")
 
     # def remboursement(self):
     #     global timer
