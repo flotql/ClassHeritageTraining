@@ -1,0 +1,37 @@
+---------------------
+
+class compte
+
+init : self - crea (datetime) solde (0) proprio (non def) banque (laF) sold/debit (list)
+
+credit (self.montant)
+	self.sold += montant
+	self.credit.appened
+
+debit (self,montant)
+	self.sold -= montant
+	self.debit.appnd
+
+affiche (self)
+	print(solde)
+
+---------------------
+
+class user
+
+init : self - mdp (non def) nom (non def (proprio?)) compte (self.proprio)
+
+afficherinfo()
+	print(demande quoi : nom / compte / solde / transactions)
+	if _ 
+		print (_)
+
+creaCompte(nom,montant)
+	input (montant)
+
+
+---------------------
+
+class premium(user)
+
+init : super().init
